@@ -1,0 +1,33 @@
+{
+  "name": "@prepair/decapitalize",
+  "version": "1.0.0",
+  "description": "Decapitalize a string.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "lint": "semistandard",
+    "precommit": "npm run lint",
+    "prepush": "npm run test",
+    "release": "git checkout master && git pull origin master && standard-version && git push --follow-tags origin master && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prepair/decapitalize.git"
+  },
+  "keywords": [
+    "string",
+    "decapitalize",
+    "utility",
+    "trivial"
+  ],
+  "author": "Szabolcs Kurdi <szabolcs.kurdi@gmail.com> (https://github.com/szkrd)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/prepair/decapitalize/issues"
+  },
+  "homepage": "https://github.com/prepair/decapitalize#readme",
+  "devDependencies": {
+    "semistandard": "9.2.1",
+    "standard-version": "4.0.0"
+  }
+}
