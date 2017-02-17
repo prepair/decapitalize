@@ -1,0 +1,2 @@
+# decapitalize
+Decapitalize a string.
